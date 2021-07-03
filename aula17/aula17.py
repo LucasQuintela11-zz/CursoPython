@@ -22,6 +22,10 @@ while True:
     numb_1 = input('Digite um numero: ')
     numb_2 = input('Digite outro numero: ')
     operator = input('Digite um operador: ')
+    sair = input('Deseja sair? [s]im ou [n]')
+
+    if sair == 's':
+        break
 
     if not numb_1.isnumeric() or not numb_2.isnumeric():
         print('Você precisa digitar um numero.')
@@ -33,16 +37,16 @@ while True:
     #+, -, /, *
     if operator == '+':
         print(numb_1 + numb_2)
-        break
+
     elif operator == '-':
         print(numb_1 - numb_2)
-        break
+
     elif operator == '/':
         print(numb_1 / numb_2)
-        break
+
     elif operator == '*':
         print(numb_1 * numb_2)
-        break
+
     else:
         print('Operador invalido!!')
 
